@@ -17,7 +17,7 @@ public class ProductSalesTest
 
     public ProductSalesTest()
     {
-    }
+    }         
 
     @BeforeAll
     public static void setUpClass()
