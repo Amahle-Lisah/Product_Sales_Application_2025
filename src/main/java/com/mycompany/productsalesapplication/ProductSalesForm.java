@@ -8,16 +8,18 @@ package com.mycompany.productsalesapplication;
  *
  * @author Amahle Lisah Khumalo
  */
-public class ProductSalesForm extends javax.swing.JFrame {
-    
+public class ProductSalesForm extends javax.swing.JFrame 
+{    
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(ProductSalesForm.class.getName());
     private final ProductSales sales = new ProductSales();
+    
     /**
      * Creates new form ProductSalesForm
      */
     public ProductSalesForm() {
         initComponents();
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
