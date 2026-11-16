@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
- */
+package com.mycompany.productsalesapplication;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
@@ -14,30 +11,44 @@ import static org.junit.jupiter.api.Assertions.*;
  *
  * @author Amahle Lisah Khumalo
  */
-public class ProductSalesTest {
-    
-    public ProductSalesTest() {
-    }
-    
-    @BeforeAll
-    public static void setUpClass() {
-    }
-    
-    @AfterAll
-    public static void tearDownClass() {
-    }
-    
-    @BeforeEach
-    public void setUp() {
-    }
-    
-    @AfterEach
-    public void tearDown() {
+public class ProductSalesTest
+{
+    private ProductSales sales;
+
+    public ProductSalesTest()
+    {
     }
 
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
+    @BeforeAll
+    public static void setUpClass()
+    {
+    }
+
+    @AfterAll
+    public static void tearDownClass()
+    {
+    }
+
+    @BeforeEach
+    public void setUp()
+    {
+        sales = new ProductSales();
+    }
+
+    @AfterEach
+    public void tearDown()
+    {
+    }
+
+    @Test
+    public void GetSalesOverLimit_ReturnsNumberOfSales()
+    {
+        assertEquals(2, sales.GetSalesOverLimit());
+    }
+
+    @Test
+    public void GetSalesUnderLimit_ReturnsNumberOfSales()
+    {
+        assertEquals(4, sales.GetSalesUnderLimit());
+    }
 }
