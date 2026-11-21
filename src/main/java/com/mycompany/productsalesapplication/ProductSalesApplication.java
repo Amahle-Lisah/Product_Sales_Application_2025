@@ -1,10 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
 package com.mycompany.productsalesapplication;
 
 /**
- *
+ * This is the programs main class
+ * This starts the entire program
  * @author Amahle Lisah Khumalo
  */
 public class ProductSalesApplication
@@ -14,4 +12,4 @@ public class ProductSalesApplication
         ProductSalesForm gui = new ProductSalesForm();
         gui.setVisible(true);
     }
-}
+} //end of class
