@@ -9,7 +9,7 @@ public class ProductSalesApplication
 {
     public static void main(String[] args)
     {
-        ProductSalesForm gui = new ProductSalesForm();
+        ProductForm gui = new ProductForm();
         gui.setVisible(true);
     }
 } //end of class
