@@ -199,7 +199,7 @@ private void saveProductData() {
         }
         //</editor-fold>
 
-        /* Create and display the form */
+        //Create and display the form 
         java.awt.EventQueue.invokeLater(() -> new ProductForm().setVisible(true));
     }
 
